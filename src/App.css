@@ -1,42 +1,95 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.hero {
+  background-color: #080808;
+  height: 100vh;
+}
+
+.navigation {
+  background-color: #1b1b1b;
+  width: 1110px;
+  margin: auto;
+  height: 70px;
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-family: "IBM Plex Mono", "San-Seriff";
+  font-size: 14px;
+  font-weight: 400;
+  color: #9c9c9c;
+  align-self: center;
+}
+
+.navigation img {
+  width: 107.54px;
+  height: 17px;
+  align-self: center;
+}
+
+.hero-flex-container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.hero-item h1 {
+  color: #ffffff;
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 44px;
+}
+
+.hero-item p {
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  color: #9c9c9c;
+  line-height: 24px;
+  letter-spacing: 1%;
+  font-weight: 400;
+  width: 492px;
+  height: 72px;
+  padding-bottom: 20px;
+}
+
+.hero-item button {
+  background-color: #3f8e00;
+  width: 307.89px;
+  height: 63px;
+  border: #62ba1b;
+  border-radius: 4px;
+  padding: 21px 64px 21px 64px;
+  cursor: pointer;
+}
+
+.hero-item button:hover {
+  background-color: #285a00;
+}
+.hero-item button span {
+  font-family: "IBM Plex Mono";
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.portrait img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+.work {
+  font-size: 14px;
+  font-family: "IBM Plex Mono";
+  color: #ffffff;
+  font-weight: 400;
+  padding-left: 280px;
+}
+
+.client {
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
