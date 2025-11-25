@@ -1,7 +1,7 @@
 import Navigation from "./Navigation";
 import arrow from "./assets/arrow.png";
 import portrait from "./assets/portrait.png";
-import Clients from "./assets/clients.png";
+import Clients from "./assets/Clients.png";
 
 export default function LandingPage() {
   return (
