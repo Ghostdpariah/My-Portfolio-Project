@@ -1,7 +1,7 @@
 import Navigation from "./Navigation";
 import arrow from "./assets/arrow.png";
 import portrait from "./assets/portrait.png";
-import clients from "./assets/clients.png";
+import Clients from "./assets/clients.png";
 
 export default function LandingPage() {
   return (
@@ -29,7 +29,7 @@ export default function LandingPage() {
           <p>Worked with</p>
         </div>
         <div className="client">
-          <img src={clients} />
+          <img src={Clients} />
         </div>
       </div>
     </>
