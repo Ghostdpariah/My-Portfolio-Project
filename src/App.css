@@ -35,7 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 30px;
 }
 
 .hero-item h1 {
@@ -78,16 +78,17 @@
 }
 
 .portrait img {
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
+  filter: brightness(85%);
 }
 .work {
   font-size: 14px;
   font-family: "IBM Plex Mono";
   color: #ffffff;
   font-weight: 400;
-  padding-left: 280px;
+  padding-left: 260px;
 }
 
 .client {
