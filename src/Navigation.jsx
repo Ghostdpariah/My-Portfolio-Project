@@ -1,14 +1,15 @@
 import smIcon from "./assets/smIcon.png";
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
   return (
     <div>
       <nav>
         <div className="navigation">
-          <a href="#"> Home</a>
+          <Link to="/"> Home</Link>
           <a href="#"> Case Studies</a>
-          <a href="#"> Testimonials</a>
-          <a href="#"> Recent work</a>
+          <Link to="/testimonial"> Testimonials</Link>
+          <Link to="/recentWork"> Recent work</Link>
           <a href="#"> Get In Touch</a>
           <img src={smIcon} />
         </div>

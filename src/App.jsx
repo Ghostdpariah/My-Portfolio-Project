@@ -1,13 +1,19 @@
 import "./App.css";
-import LandingPage from "./LandingPage";
+import Home from "./Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import RecentWork from "./RecentWork";
+import Testimonial from "./Testimonial";
 
 function App() {
   return (
-    <>
-      <div>
-        <LandingPage />
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/recentWork" element={<RecentWork />} />
+        <Route path="/testimonial" element={<Testimonial />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

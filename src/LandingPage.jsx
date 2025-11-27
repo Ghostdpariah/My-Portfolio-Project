@@ -3,6 +3,7 @@ import arrow from "./assets/arrow.png";
 import portrait from "./assets/portrait.png";
 import Clients from "./assets/Clients.png";
 import portraitImg from "./assets/portraitImg.png";
+import RecentWork from "./RecentWork";
 export default function LandingPage() {
   return (
     <>
