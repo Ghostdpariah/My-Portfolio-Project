@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import RecentWork from "./RecentWork";
 import Testimonial from "./Testimonial";
-import GetInTouch from "./GetinTouch";
+import GetInTouch from "./GetInTouch";
 
 function App() {
   return (
