@@ -4,7 +4,8 @@ import arrowLeft from "./assets/arrowLeft.png";
 import arrowRight from "./assets/arrowRight.png";
 import workImageThree from "./assets/workImageThree.jpg";
 import workImageFour from "./assets/workImageFour.jpg";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const slideObject = [
   {
@@ -90,6 +91,13 @@ export default function RecentWork() {
         <button onClick={handleNext} className="arrow-right">
           <img src={arrowRight} />
         </button>
+      </div>
+      <div class="return-home-recent">
+        <Link to="/">
+          <button class>
+            <img src={arrowLeft} alt="Go home" />
+          </button>
+        </Link>
       </div>
     </div>
   );

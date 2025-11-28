@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import RecentWork from "./RecentWork";
 import Testimonial from "./Testimonial";
+import GetInTouch from "./GetinTouch";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/recentWork" element={<RecentWork />} />
         <Route path="/testimonial" element={<Testimonial />} />
+        <Route path="/getInTouch" element={<GetInTouch />} />
       </Routes>
     </BrowserRouter>
   );

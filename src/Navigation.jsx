@@ -10,7 +10,7 @@ export default function Navigation() {
           <a href="#"> Case Studies</a>
           <Link to="/testimonial"> Testimonials</Link>
           <Link to="/recentWork"> Recent work</Link>
-          <a href="#"> Get In Touch</a>
+          <Link to="/getInTouch"> Get In Touch</Link>
           <img src={smIcon} />
         </div>
       </nav>

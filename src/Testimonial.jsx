@@ -1,6 +1,8 @@
 import quote from "./assets/quote.png";
 import rectangeImg from "./assets/rectangleImg.png";
 import clientOne from "./assets/clientOne.png";
+import arrowLeft from "./assets/arrowLeft.png";
+import { Link } from "react-router-dom";
 
 export default function Testimonial() {
   return (
@@ -67,6 +69,11 @@ export default function Testimonial() {
             </div>
           </div>
         </div>
+        <Link to="/">
+          <button>
+            <img src={arrowLeft} alt="Go home" />
+          </button>
+        </Link>
       </div>
     </>
   );
