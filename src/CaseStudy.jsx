@@ -1,7 +1,7 @@
 import maskImageOne from "./assets/maskImageOne.png";
 import maskImageTwo from "./assets/maskImageTwo.png";
 import maskImageThree from "./assets/maskImageThree.png";
-import arrowLeft from "./assets/arrowleft.png";
+import arrowLeft from "./assets/arrowLeft.png";
 import { Link } from "react-router-dom";
 
 export default function CaseStudy() {
