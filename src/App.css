@@ -424,3 +424,97 @@
   top: 10%;
   left: 5%;
 }
+
+/* Case Study */
+.case-container h1 {
+  font-family: "Raleway";
+  font-size: 34px;
+  color: #080808;
+  font-weight: 800;
+  text-align: center;
+}
+
+.case-container .header-item p {
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1%;
+  margin: auto;
+  width: 50%;
+  padding-bottom: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+.grid-item-one {
+  margin: auto;
+}
+.grid-item-two {
+  margin: auto;
+}
+.grid-item-three {
+  margin: auto;
+}
+
+.grid-container h2 {
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 800;
+  color: #080808;
+}
+.grid-container p {
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-weight: 400;
+  color: #9c9c9c;
+  width: 80%;
+}
+
+.grid-container span {
+  font-family: "IBM Plex Mono";
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1%;
+  font-weight: 700;
+  border-radius: 60px;
+}
+
+.grid-item-one span {
+  background-color: #fff6e9;
+  color: #ffa217;
+}
+.grid-item-two span {
+  background-color: #d0e6ff;
+  color: #000aff;
+}
+.grid-item-three span {
+  background-color: #e0fff8;
+  color: #2ab090;
+}
+
+.grid-container button {
+  width: 189.89px;
+  height: 38px;
+  border-radius: 4px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "IBM Plex Mono";
+}
+
+.grid-item-one button {
+  background-color: #fea216;
+}
+.grid-item-two button {
+  background-color: #000aff;
+}
+
+.grid-item-three button {
+  background-color: #2ab090;
+}
