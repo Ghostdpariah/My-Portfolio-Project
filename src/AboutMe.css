@@ -1,0 +1,53 @@
+.about-container {
+  position: relative;
+  /* background-color: #888; */
+}
+
+.about-me {
+  height: 100vh;
+}
+
+.about-me img {
+  position: absolute;
+  bottom: 0;
+  width: 700px;
+  height: auto;
+}
+
+.about-me h1 {
+  display: none;
+}
+
+.about-me p {
+  width: 40%;
+  margin-left: 50%;
+  line-height: 35px;
+  padding-top: 5%;
+  font-weight: 500;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+}
+
+/* Media queries */
+
+@media (max-width: 599px) {
+  .about-me img {
+    display: none;
+  }
+
+  .about-me h1 {
+    display: block;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .about-me p {
+    font-family: "Raleway";
+    width: 90%;
+    font-size: 12px;
+    line-height: 35px;
+    margin: auto;
+    padding-top: 20px;
+  }
+}

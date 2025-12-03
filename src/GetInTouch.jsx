@@ -32,8 +32,9 @@ export default function GetInTouch() {
     <div className="form-container">
       <h1>Get in Touch</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Feel free to get in touch — I’m always open to new projects,
+        collaborations, and opportunities to build meaningful digital
+        experiences
       </p>
 
       <form onSubmit={handleSubmit}>

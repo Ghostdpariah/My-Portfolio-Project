@@ -1,0 +1,31 @@
+.navigation-mobile {
+  display: flex;
+  gap: 70%;
+  background-color: #1b1b1b;
+  width: auto;
+  height: 60px;
+  margin: auto;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.hamburger-container {
+  display: flex;
+  height: 100%;
+  justify-content: left;
+  margin-left: 10%;
+  filter: invert(25%);
+}
+.navigation-mobile img {
+  height: 30%;
+  margin: auto;
+}
+
+.social-container {
+  display: flex;
+  gap: 20px;
+}
+
+.social-container img {
+  filter: invert(75%);
+}

@@ -1,33 +1,40 @@
-import workImageOne from "./assets/workImageOne.png";
-import workImageTwo from "./assets/workImageTwo.png";
+import "./RecentWork.css";
 import arrowLeft from "./assets/arrowLeft.png";
 import arrowRight from "./assets/arrowRight.png";
-import workImageThree from "./assets/workImageThree.jpg";
-import workImageFour from "./assets/workImageFour.jpg";
+
+import room from "./assets/room.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import github from "./assets/github.svg";
+import browser from "./assets/browser.svg";
+import profit from "./assets/profit.png";
+import sunnySide from "./assets/sunnySide.jpg";
+import meet from "./assets/meet.png";
+import Navigation, { NavMobile } from "./Navigation";
+import "./NavMobile.css";
 
 const slideObject = [
   {
-    headingOne: "Guess My Number",
+    headingOne: "Room",
     paragraphOne:
-      "Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    imageOne: workImageOne,
-    headingTwo: "Dice Game",
+      "Designing digital experiences that feel natural and engaging. This interactive 3D room showcases thoughtful UI choices, clean visuals, and effortless user interaction.",
+    imageOne: room,
+    headingTwo: "Sunnyside",
+
     paragraphTwo:
-      "Labore et dolore magna aliqua. sed do eiusmod tempor incididunt u labore et dolore magna.",
-    imageTwo: workImageTwo,
+      "A fully responsive landing page built with clean component architecture, optimized assets, and modern layout techniques. Designed to demonstrate pixel-perfect UI implementation.",
+    imageTwo: sunnySide,
   },
 
   {
-    headingOne: "Profit Calculator",
+    headingOne: "Profit Predictor",
     paragraphOne:
-      "Crafting seamless digital solutions that elevate user jo urneys. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imageOne: workImageThree,
-    headingTwo: "Room",
+      "Profit Predictor simulates investment vs. sales scenarios, helping users forecast profit goals and make smarter financial decisions by estimating returns and business outcomes before you commit.",
+    imageOne: profit,
+    headingTwo: "Meet",
     paragraphTwo:
-      "Transforming ideas into high-impact websites & applications. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imageTwo: workImageFour,
+      "A modern meet-up landing page engineered with , semantic structure, and responsive design patterns. Built to highlight clean UI implementation and efficient front-end workflow..",
+    imageTwo: meet,
   },
 ];
 
@@ -46,59 +53,81 @@ export default function RecentWork() {
   };
 
   return (
-    <div className="work-container">
-      <div className="work-item">
-        <h1>Recent Work</h1>
-        <p>
-          Solving user & business problems since last 15+ years.Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-      <div className="flex-container">
-        <div className="work-1">
-          <div>
-            <img src={currentSlide.imageOne} />
-          </div>
-          <div>
-            <h2>{currentSlide.headingOne}</h2>
-            <p>{currentSlide.paragraphOne}</p>
-          </div>
-          <button>
-            {" "}
-            <span>Know more {">"}</span>
-          </button>
+    <>
+      <Navigation />
+      <NavMobile />
+      <div className="work-container">
+        <div className="work-item">
+          <h1>Recent Works</h1>
         </div>
+        <div className="flex-container">
+          <div className="work-1">
+            <div className="image-container">
+              <img src={currentSlide.imageOne} />
+            </div>
+            <div className="tags">
+              <p className="html">Html</p>
+              <p className="css">Css</p>
+              <p className="javascript">Javascript</p>
+              <p className="react">React</p>
+            </div>
+            <div>
+              <h2>{currentSlide.headingOne}</h2>
+              <p>{currentSlide.paragraphOne}</p>
+            </div>
+            <div className="view-button">
+              <button className="view-code">
+                <img src={github} />
+                <span>View code</span>
+              </button>
+              <button className="view-website">
+                <img src={browser} />
+                <span>View website</span>
+              </button>
+            </div>
+          </div>
 
-        <div className="work-2">
-          <div>
-            <img src={currentSlide.imageTwo} />
+          <div className="work-2">
+            <div className="image-container">
+              <img src={currentSlide.imageTwo} />
+            </div>
+            <div className="tags">
+              <p className="html">Html</p>
+              <p className="css">Css</p>
+              <p className="javascript">Javascript</p>
+            </div>
+            <div>
+              <h2>{currentSlide.headingTwo}</h2>
+              <p>{currentSlide.paragraphTwo}</p>
+            </div>
+            <div className="view-button">
+              <button className="view-code">
+                <img src={github} />
+                <span>View code</span>
+              </button>
+              <button className="view-website">
+                <img src={browser} />
+                <span>View website</span>
+              </button>
+            </div>
           </div>
-          <div>
-            <h2>{currentSlide.headingTwo}</h2>
-            <p>{currentSlide.paragraphTwo}</p>
-          </div>
-          <button>
-            {" "}
-            <span>Know more {">"}</span>
+        </div>
+        <div className="buttons">
+          <button onClick={handlePrev} className="arrow-left">
+            <img src={arrowLeft} />
+          </button>
+          <button onClick={handleNext} className="arrow-right">
+            <img src={arrowRight} />
           </button>
         </div>
+        <div class="return-home-recent">
+          <Link to="/">
+            <button class>
+              <img src={arrowLeft} alt="Go home" />
+            </button>
+          </Link>
+        </div>
       </div>
-      <div className="buttons">
-        <button onClick={handlePrev} className="arrow-left">
-          <img src={arrowLeft} />
-        </button>
-        <button onClick={handleNext} className="arrow-right">
-          <img src={arrowRight} />
-        </button>
-      </div>
-      <div class="return-home-recent">
-        <Link to="/">
-          <button class>
-            <img src={arrowLeft} alt="Go home" />
-          </button>
-        </Link>
-      </div>
-    </div>
+    </>
   );
 }
