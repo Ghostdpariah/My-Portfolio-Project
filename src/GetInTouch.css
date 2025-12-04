@@ -1,0 +1,90 @@
+.form-container {
+  background-color: #080808;
+  padding: 1px;
+  height: 100vh;
+}
+
+.form-container h1 {
+  font-size: 34px;
+  font-family: "Raleway";
+  color: #ffffff;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 7%;
+}
+.form-container p {
+  color: #757575;
+  margin: auto;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1%;
+  width: 40%;
+  padding-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  color: #ffffff;
+  text-align: left;
+  line-height: 100%;
+  font-size: 12px;
+  font-family: "IBM Plex Mono";
+  font-weight: 600;
+  width: 326px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.form-container input {
+  display: block;
+  margin: auto;
+  border: 1px;
+  width: 326px;
+  height: 36px;
+  margin-top: 0.5%;
+}
+
+.message input {
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.submit-button button {
+  width: 350px;
+  height: 50px;
+  border: 1px;
+  border-color: #62ba1b;
+  background-color: #3f8e00;
+  border-radius: 4px;
+  display: block;
+  margin: auto;
+}
+
+.submit-button button span {
+  color: #ffffff;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 700;
+}
+.return-button button {
+  height: 40px;
+  width: 39.89px;
+  border-radius: 50%;
+  border-color: #9c9c9c;
+  cursor: pointer;
+  background-color: #080808;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+/* Media Query */
+@media (max-width: 599px) {
+  .form-container p {
+    font-size: 12px;
+    width: 60%;
+  }
+}

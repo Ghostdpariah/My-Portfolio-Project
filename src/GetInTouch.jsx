@@ -1,32 +1,41 @@
+import "./GetInTouch.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import arrowLeft from "./assets/arrowLeft.png";
 
 export default function GetInTouch() {
-  const [formData, setFormData] = useState({
-    Email: "",
-    Mobile: "",
-    Message: "",
-  });
+  const [userEmail, setUserEmail] = useState("");
+  const [userMobile, setUserMobile] = useState("");
+  const [userMessage, setUserMessage] = useState("");
 
-  const [isSubmitted, setSubmitted] = useState(false);
+  function handleEmailInput(e) {
+    setUserEmail(e.target.value);
+  }
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
+  function handleMobileInput(e) {
+    setUserMobile(e.target.value);
+  }
+  function handleMessageInput(e) {
+    setUserMessage(e.target.value);
+  }
+  // const [isSubmitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prevState) => ({
+  //     ...prevState,
+  //     [name]: value,
+  //   }));
+  // };
 
-    console.log("Submitted:", formData);
-    setSubmitted(true);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    // You can send data to backend here
-  };
+  //   console.log("Submitted:", formData);
+  //   setSubmitted(true);
+
+  // You can send data to backend here
+  // };
 
   return (
     <div className="form-container">
@@ -37,35 +46,30 @@ export default function GetInTouch() {
         experiences
       </p>
 
-      <form onSubmit={handleSubmit}>
-        <label>Email</label>
+      <form>
+        <label htmlFor="email"> Email</label>
         <div>
           <input
-            type="text"
+            type="email"
             name="Email"
-            value={formData.Email}
-            onChange={handleChange}
+            placeholder="Input email"
+            onChange={handleEmailInput}
           />
         </div>
 
         <label>Mobile</label>
         <div>
           <input
-            type="text"
+            type="tel"
             name="Mobile"
-            value={formData.Mobile}
-            onChange={handleChange}
+            placeholder="Input mobile number"
+            onChange={handleMobileInput}
           />
         </div>
 
         <label>Message</label>
         <div className="message">
-          <input
-            type="text"
-            name="Message"
-            value={formData.Message}
-            onChange={handleChange}
-          />
+          <input type="text" name="Message" onChange={handleMessageInput} />
         </div>
         <div className="submit-button">
           <button type="submit">
@@ -75,7 +79,7 @@ export default function GetInTouch() {
       </form>
       <div className="return-button">
         <Link to="/">
-          <button class>
+          <button>
             <img src={arrowLeft} alt="Go home" />
           </button>
         </Link>

@@ -9,7 +9,7 @@
 
 .about-me img {
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   width: 700px;
   height: auto;
 }
@@ -49,5 +49,57 @@
     line-height: 35px;
     margin: auto;
     padding-top: 20px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 911px) {
+  .about-me img {
+    display: none;
+  }
+  .about-me h1 {
+    display: block;
+
+    text-align: center;
+    padding-top: 10px;
+  }
+  .about-me p {
+    font-family: "Raleway";
+    width: 90%;
+    font-size: 14px;
+    line-height: 35px;
+    margin: auto;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 912px) and (max-width: 1200px) {
+  .about-me img {
+    display: none;
+  }
+  .about-me h1 {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .about-me p {
+    font-size: 14px;
+    line-height: 40px;
+    margin: auto;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .about-me img {
+    display: none;
+  }
+  .about-me p {
+    width: 90%;
+    font-size: 14px;
+    line-height: 40px;
+    margin: auto;
+    padding-top: 40px;
+    text-align: left;
   }
 }
