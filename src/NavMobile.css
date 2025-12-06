@@ -5,8 +5,8 @@
   width: auto;
   height: 60px;
   margin: auto;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
+  /* border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px; */
 }
 
 .hamburger-container {
@@ -28,4 +28,33 @@
 
 .social-container img {
   filter: invert(75%);
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: row;
+  background: #161515;
+  height: 50px;
+  cursor: pointer;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-family: "IBM Plex Mono";
+  margin: auto;
+}
+
+.mobile-menu.open {
+  display: flex;
+  gap: 4%;
+  width: 100%;
+  margin: auto;
+}
+
+.hamburger-container img {
+  width: 30px;
+  cursor: pointer;
 }

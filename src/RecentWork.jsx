@@ -19,22 +19,31 @@ const slideObject = [
     paragraphOne:
       "Designing digital experiences that feel natural and engaging. This interactive 3D room showcases thoughtful UI choices, clean visuals, and effortless user interaction.",
     imageOne: room,
-    headingTwo: "Sunnyside",
+    githubOne: "https://github.com/Ghostdpariah/Room-React.git",
+    websiteOne: "https://room-react.vercel.app/",
 
+    headingTwo: "Sunnyside",
     paragraphTwo:
       "A fully responsive landing page built with clean component architecture, optimized assets, and modern layout techniques. Designed to demonstrate pixel-perfect UI implementation.",
     imageTwo: sunnySide,
+    githubTwo: "https://github.com/Ghostdpariah/sunnyside-project.git",
+    websiteTwo: "https://sunnyside-project-gray.vercel.app/",
   },
 
   {
     headingOne: "Profit Predictor",
     paragraphOne:
-      "Profit Predictor simulates investment vs. sales scenarios, helping users forecast profit goals and make smarter financial decisions by estimating returns and business outcomes before you commit.",
+      "Profit Predictor simulates investment vs. sales scenarios, helping users forecast profit goals and make smarter financial decisions by estimating returns and business outcomes before they commit.",
     imageOne: profit,
+    githubOne: "https://github.com/Ghostdpariah/Profit-Predictor.git",
+    websiteOne: "https://profit-predictor-seven.vercel.app/",
+
     headingTwo: "Meet",
     paragraphTwo:
       "A modern meet-up landing page engineered with , semantic structure, and responsive design patterns. Built to highlight clean UI implementation and efficient front-end workflow..",
     imageTwo: meet,
+    githubTwo: "https://github.com/Ghostdpariah/Meet.git",
+    websiteTwo: "https://meet-beryl-five.vercel.app/",
   },
 ];
 
@@ -76,12 +85,18 @@ export default function RecentWork() {
               <p>{currentSlide.paragraphOne}</p>
             </div>
             <div className="view-button">
-              <button className="view-code">
-                <img src={github} />
+              <button
+                className="view-code"
+                onClick={() => window.open(currentSlide.githubOne, "_blank")}
+              >
+                <img src={github} alt="github-icon" />
                 <span>View code</span>
               </button>
-              <button className="view-website">
-                <img src={browser} />
+              <button
+                className="view-website"
+                onClick={() => window.open(currentSlide.websiteOne, "_blank")}
+              >
+                <img src={browser} alt="website-icon" />
                 <span>View website</span>
               </button>
             </div>
@@ -101,11 +116,17 @@ export default function RecentWork() {
               <p>{currentSlide.paragraphTwo}</p>
             </div>
             <div className="view-button">
-              <button className="view-code">
+              <button
+                className="view-code"
+                onClick={() => window.open(currentSlide.githubTwo, "_blank")}
+              >
                 <img src={github} />
                 <span>View code</span>
               </button>
-              <button className="view-website">
+              <button
+                className="view-website"
+                onClick={() => window.open(currentSlide.websiteTwo, "_blank")}
+              >
                 <img src={browser} />
                 <span>View website</span>
               </button>
@@ -119,13 +140,6 @@ export default function RecentWork() {
           <button onClick={handleNext} className="arrow-right">
             <img src={arrowRight} />
           </button>
-        </div>
-        <div class="return-home-recent">
-          <Link to="/">
-            <button class>
-              <img src={arrowLeft} alt="Go home" />
-            </button>
-          </Link>
         </div>
       </div>
     </>

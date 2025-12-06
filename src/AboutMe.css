@@ -26,6 +26,8 @@
   font-weight: 500;
   font-family: "Raleway";
   letter-spacing: 1px;
+  font-size: 14px;
+  line-break: strict;
 }
 
 /* Media queries */
@@ -40,6 +42,7 @@
     margin-top: 0;
     text-align: center;
     padding-top: 10px;
+    font-family: "IBM Plex Mono";
   }
 
   .about-me p {
@@ -48,7 +51,7 @@
     font-size: 12px;
     line-height: 35px;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 0;
   }
 }
 
