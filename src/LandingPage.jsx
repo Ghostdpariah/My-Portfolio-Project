@@ -7,7 +7,7 @@ import "./NavMobile.css";
 import Marquee from "react-fast-marquee";
 import reactLogo from "./assets/reactLogo.svg.png";
 import nodeLogo from "./assets/nodeJs.svg.png";
-import jsLogo from "./assets/js.svg.png";
+import jsLogo from "./assets/Js.svg.png";
 import tailwindLogo from "./assets/tailWind.svg.png";
 import html from "./assets/Html5.svg.png";
 import fireBase from "./assets/fireBase.svg.png";
