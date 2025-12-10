@@ -35,11 +35,11 @@
 }
 
 .hero-flex-container {
-  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-top: 9%;
 }
 
 .hero-item h1 {
@@ -99,6 +99,22 @@
 .client {
   text-align: center;
 }
+
+.marquee {
+  margin-top: 4%;
+}
+.marquee img {
+  margin-right: 40px;
+  filter: grayscale(100%);
+}
+
+.marquee-item {
+  padding-left: 50px;
+}
+.marquee p {
+  color: white;
+  font-family: "IBM Plex Mono";
+}
 /* Media Query */
 @media (max-width: 576px) {
   .mobile-navigation {
@@ -124,6 +140,9 @@
     text-align: center;
     padding: 0;
     padding-bottom: 20px;
+  }
+  .marquee {
+    margin-top: 20%;
   }
 }
 

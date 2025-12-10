@@ -35,9 +35,9 @@ export default function Testimonial() {
               <img src={avatarTwo} />
               <p>Chinedu Okafor</p>
             </div>
-            <div className="work-tittle">
+            {/* <div className="work-tittle">
               Digital Marketing Strategist. HubSpot. Nigeria
-            </div>
+            </div> */}
           </div>
           <div className="testimonial-item">
             <div className="quote">
@@ -51,7 +51,7 @@ export default function Testimonial() {
               <img src={avatarOne} />
               <p>Adesuwa Martins</p>
             </div>
-            <div className="work-tittle">Sales Manager. Jumia. Nigeria</div>
+            {/* <div className="work-tittle">Sales Manager. Jumia. Nigeria</div> */}
           </div>
           <div className="testimonial-item">
             <div className="quote">
@@ -65,9 +65,9 @@ export default function Testimonial() {
               <img src={Lanre} />
               <p>Lanre Adeolu</p>
             </div>
-            <div className="work-tittle">
+            {/* <div className="work-tittle">
               Senior Developer. TechAccent. Nigeria
-            </div>
+            </div> */}
           </div>
           <div className="testimonial-item">
             <div className="quote">
@@ -81,9 +81,9 @@ export default function Testimonial() {
               <img src={avatarThree} />
               <p>Daniel Harris</p>
             </div>
-            <div className="work-tittle">
+            {/* <div className="work-tittle">
               Senior Software Engineer. Revoult. United Kingdom
-            </div>
+            </div> */}
           </div>
         </div>
         <Link to="/">

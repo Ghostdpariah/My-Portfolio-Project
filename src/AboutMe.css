@@ -1,14 +1,15 @@
 .about-container {
-  position: relative;
+  /* position: relative; */
   /* background-color: #888; */
 }
 
 .about-me {
-  height: 100vh;
+  /* height: 100vh; */
+  display: flex;
 }
 
 .about-me img {
-  position: absolute;
+  /* position: absolute; */
   bottom: -10%;
   width: 700px;
   height: auto;
@@ -19,15 +20,14 @@
 }
 
 .about-me p {
-  width: 40%;
-  margin-left: 50%;
-  line-height: 35px;
+  width: 80%;
+
+  line-height: 30px;
   padding-top: 5%;
   font-weight: 500;
   font-family: "Raleway";
   letter-spacing: 1px;
-  font-size: 14px;
-  line-break: strict;
+  font-size: 13px;
 }
 
 /* Media queries */
