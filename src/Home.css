@@ -1,6 +1,7 @@
 .hero {
   background-color: #080808;
   height: 100vh;
+  position: relative;
 }
 
 .navigation {
@@ -101,7 +102,8 @@
 }
 
 .marquee {
-  margin-top: 4%;
+  position: absolute;
+  bottom: 0;
 }
 .marquee img {
   margin-right: 40px;
@@ -142,7 +144,7 @@
     padding-bottom: 20px;
   }
   .marquee {
-    margin-top: 20%;
+    display: none;
   }
 }
 
@@ -166,6 +168,7 @@
   }
   .hero-item {
     text-align: center;
+    margin-top: 20%;
   }
 
   .hero-item button {
@@ -182,12 +185,19 @@
   .hamburger-container {
     filter: invert(25%);
   }
+  .marquee {
+    display: none;
+  }
 }
 
 @media (min-width: 912px) and (max-width: 1200px) {
   .portrait img {
     width: 300px;
     height: 300px;
+  }
+
+  .hero-flex-container {
+    margin-top: 17%;
   }
 
   .hero-item {
@@ -207,5 +217,9 @@
 
   .navigation a {
     font-size: 12px;
+  }
+  .marquee {
+    position: absolute;
+    bottom: 0;
   }
 }
