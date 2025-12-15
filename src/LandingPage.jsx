@@ -1,7 +1,6 @@
 import Navigation, { NavMobile } from "./Navigation";
 import arrow from "./assets/arrow.png";
-import portrait from "./assets/portrait.png";
-import Clients from "./assets/Clients.png";
+
 import portraitImg from "./assets/portraitImg.png";
 import "./NavMobile.css";
 import Marquee from "react-fast-marquee";
@@ -14,6 +13,10 @@ import fireBase from "./assets/fireBase.svg.png";
 import typeScript from "./assets/Typescript.svg.png";
 import nextJs from "./assets/nextJs.svg.png";
 import mongo from "./assets/Mongo.svg.png";
+import npm from "./assets/npm.svg.png";
+import EsLint from "./assets/EsLint.svg.png";
+import Astro from "./assets/Astro.svg.png";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
   return (
@@ -29,10 +32,12 @@ export default function LandingPage() {
               responsive digital experiences through modern code and creative
               problem-solving.
             </p>
-            <button>
-              <span>Let's get started </span>
-              <img src={arrow} />
-            </button>
+            <Link to="/getInTouch">
+              <button>
+                <span>Let's get started </span>
+                <img src={arrow} />
+              </button>
+            </Link>
           </div>
           <div className="portrait">
             <img src={portraitImg} />
@@ -47,7 +52,7 @@ export default function LandingPage() {
               <img src={jsLogo} alt="Javascript" />
               <img src={tailwindLogo} alt="Tailwind" />
               <img src={html} alt="Html" />
-              <img src={fireBase} alt="fireBase" />
+              <img src={fireBase} alt="fireBase" style={{ width: "60px" }} />
               <img src={typeScript} alt="Typescript" />
               <img
                 src={nextJs}
@@ -55,11 +60,37 @@ export default function LandingPage() {
                 style={{
                   marginRight: "40px",
                   filter: "brightness(0) invert(1)",
+                  width: "60px",
                 }}
               />
               <img
                 src={mongo}
                 alt="MongoDB"
+                style={{
+                  marginRight: "40px",
+                  filter: "brightness(0) invert(1)",
+                }}
+              />{" "}
+              <img
+                src={npm}
+                alt="npm"
+                style={{
+                  marginRight: "40px",
+                  filter: "brightness(15%) invert(1)",
+                }}
+              />{" "}
+              <img
+                src={EsLint}
+                alt="EsLint"
+                style={{
+                  marginRight: "40px",
+                  filter: "brightness(0) invert(1)",
+                  width: "40px",
+                }}
+              />{" "}
+              <img
+                src={Astro}
+                alt="Astro"
                 style={{
                   marginRight: "40px",
                   filter: "brightness(0) invert(1)",

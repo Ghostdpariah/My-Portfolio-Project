@@ -77,7 +77,7 @@ export default function RecentWork() {
             <div className="tags">
               <p className="html">Html</p>
               <p className="css">Css</p>
-              <p className="javascript">Javascript</p>
+              {/* <p className="javascript">Javascript</p> */}
               <p className="react">React</p>
             </div>
             <div>
@@ -109,7 +109,7 @@ export default function RecentWork() {
             <div className="tags">
               <p className="html">Html</p>
               <p className="css">Css</p>
-              <p className="javascript">Javascript</p>
+              {/* <p className="javascript">Javascript</p> */}
             </div>
             <div>
               <h2>{currentSlide.headingTwo}</h2>

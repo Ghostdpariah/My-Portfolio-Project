@@ -112,7 +112,7 @@
   padding-left: 50px;
 }
 .marquee p {
-  color: white;
+  color: rgb(134, 132, 132);
   font-family: "IBM Plex Mono";
 }
 /* Media Query */
